@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@600&family=Style+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@1,500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  /* background-color: black; */
+  font-family: "Arimo", sans-serif;
+}
+
+/* HOME PAGE Start */
+main {
+  background: url(../IMAGES/background-image2.jpg) no-repeat center center fixed;
+  background-position-x: right;
+  height: 100vh;
+  width: 100vw;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: space-around;
+  height: 10vh;
+  position: fixed;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.678);
+  z-index: 999;
+}
+
+header .logo h1 a {
+  color: #ebc90d;
+  font-family: "STIX Two Text", serif;
+  font-size: 30px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+header nav ul {
+  display: flex;
+  width: 50vw;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header nav ul li a {
+  color: #fff;
+  font-size: 16px;
+  padding: 20px 50px;
+  transition: all ease-in-out 1s;
+}
+
+header nav ul li a:hover {
+  color: #ebc90d;
+  border-bottom: #fff solid 1px;
+  background-color: rgba(255, 255, 255, 0.295);
+}
+
+section.name {
+  height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin: 0 55px;
+}
+
+section.name h2 {
+  font-size: 80px;
+  letter-spacing: 2px;
+  font-family: "Style Script", cursive;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+section.name p {
+  font: 28px;
+  text-transform: uppercase;
+  color: #ebc90d;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+section.name a {
+  color: #ebc90d;
+  padding: 10px 30px;
+  margin: 10px;
+  border: #ebc90d solid 2px;
+  text-transform: uppercase;
+  transition: transform ease-in 0.2s;
+}
+
+section.name a:hover {
+  color: white;
+  border: white solid 2px;
+  background-color: rgba(255, 255, 255, 0.295);
+  transform: scale(1.1);
+}
+
+/* HOME PAGE END */
+
+/* ABOUT PAGE Start */
+section.about {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #000;
+  margin-top: 150px;
+}
+
+section.about h3 {
+  color: #fff;
+  font-size: 60px;
+  margin: 60px;
+  font-family: "Style Script", cursive;
+}
+
+section.about .container {
+  height: 40vh;
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+section.about .container .box {
+  background-color: #000;
+  margin: 10px;
+  padding: 50px 35px;
+  text-align: center;
+  border-radius: 20px;
+  border: 5px solid #fff;
+  font-family: "Style Script", cursive;
+}
+
+section.about .container .box:hover {
+  background-color: rgba(255, 255, 255, 0.295);
+  border: none;
+  transform: scale(1.1);
+}
+
+section.about .container .box h4 {
+  font-size: 45px;
+  margin-bottom: 20px;
+  color: #ebc90d;
+}
+
+section.about .container .box img {
+  height: 100px;
+}
+
+/* ABOUT PAGE END */
+
+/* Work Page Start */
+section.work {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  background-color: #000;
+  margin-top: 150px;
+  color: #fff;
+}
+
+section.work h3 {
+  font-family: "Style Script", cursive;
+  font-size: 60px;
+  margin: 60px;
+}
+
+section.work .container {
+  height: 40vh;
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+section.work .container .box {
+  background-color: #000;
+  text-align: center;
+  margin-top: 60px;
+}
+
+section.work .container .box:hover {
+  transform: scale(1.1);
+}
+
+section.work .container .box img {
+  height: 300px;
+  border-radius: 20px;
+}
+
+/* Work Page END */
+
+/* Contact Page Start */
+section.contact {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  background-color: #000;
+  margin-top: 150px;
+  color: #fff;
+}
+
+section.contact h3 {
+  font-family: "Style Script", cursive;
+  font-size: 60px;
+  margin: 60px;
+}
+
+section.contact .contact-me {
+  height: 60vh;
+  width: 30vw;
+  padding: 50px;
+  background-color: #493a3a4d;
+  border-radius: 30px;
+}
+
+section.contact .contact-me form {
+  display: flex;
+  flex-direction: column;
+}
+
+section.contact .contact-me form input,
+section.contact .contact-me form textarea {
+  padding: 10px 30px;
+  margin: 5px 0;
+  border-radius: 20px;
+}
+
+section.contact .contact-me form input[type="submit"] {
+  width: 120px;
+  align-self: center;
+  text-align: center;
+}
+
+/* Contact Page END */
+
+/* Media Queries for responsive design */
+@media (max-width: 1370px) {
+  section.work {
+    height: 170vh;
+  }
+
+  section.work .container .box img {
+    height: 340px;
+  }
+}
+
+@media (max-width: 1100px) {
+  /* main{
+        background-position-x: right;
+    } */
+  header {
+    flex-direction: column;
+    height: 20vh;
+  }
+
+  header .logo h1 a {
+    font-size: 50px;
+  }
+  section.name {
+    height: 80vh;
+  }
+
+  section.name h2 {
+    font-size: 60px;
+  }
+
+  header nav ul li a {
+    padding: 20px 30px;
+  }
+
+  section.about {
+    height: 200vh;
+    /* justify-content: space-around; */
+  }
+
+  section.work {
+    height: 90vh;
+  }
+
+  section.work .container .box img {
+    height: 200px;
+  }
+
+  section.contact .contact-me {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 910px) {
+  section.work {
+    height: 130vh;
+  }
+
+  section.work .container .box img {
+    height: 220px;
+  }
+}
+
+@media (max-width: 508px) {
+  section.about {
+    height: 230vh;
+    /* justify-content: space-around; */
+  }
+
+  section.work .container .box img {
+    height: 150px;
+  }
+
+  section.work {
+    height: 100vh;
+  }
+
+  section.contact .contact-me {
+    width: 90vw;
+  }
+}
