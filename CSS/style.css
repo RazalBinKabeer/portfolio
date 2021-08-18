@@ -264,17 +264,12 @@ section.contact .contact-me form textarea {
   border-radius: 20px;
 }
 
-.btn {
-  width: 240px;
+section.contact .contact-me form input[type='submit'] {
+  width: 120px;
   align-self: center;
   text-align: center;
-  color: #ebc90d;
-  padding: 10px 30px;
-  margin: 10px;
-  border: #ebc90d solid 2px;
-  text-transform: uppercase;
-  transition: transform ease-in 0.2s;
 }
+
 
 /* Contact Page END */
 
